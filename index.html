@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bind JS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Bind JS - Javascript Two-Way Data Binding" />
+<meta property="og:url" content="http://theiliad.github.io/vibe-javascript-modal/" />
+<meta property="og:site_name" content="Bind JS - Javascript Two-Way Data Binding" />
+<meta property="article:tag" content="javascript" />
+<meta property="article:tag" content="two-way data binding" />
+<meta property="article:section" content="javascript" />
+<meta property="article:published_time" content="2016-5-6T16:00:00+00:00" />
+<meta property="og:image" content="https://raw.githubusercontent.com/theiliad/vibe-javascript-modal/master/demo/demo.gif" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bind JS - Javascript Two-Way Data Binding"/>
+<meta name="twitter:domain" content="Github"/>
+<meta name="twitter:image" content="https://raw.githubusercontent.com/theiliad/vibe-javascript-modal/master/demo/demo.gif"/>
+
+<!-- These are only needed for the demo -->
+<link rel='stylesheet' href='css/demo.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/ionicons.min.css' type='text/css' media='all' />
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+<!-- demo ENDS -->
+
+</head>
+<body>
+    <div class="container">
+        
+        <!-- NAVBAR STARTS -->
+        <ul id="navbar">
+            <li class="nav-item nav-logo">
+                <a href="#">
+                    <i class="icon ion-flash"></i>Bind JS
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="http://eMoosavi.com" target="_blank">Eliad Moosavi</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="http://github.com/theiliad" target="_blank">Github</a>
+            </li>
+        </ul>
+        <!-- NAVBAR ENDS -->
+        
+    </div>
+    
+    <div class="content">
+        <div class="row">
+            <div class="column-3-med">
+                <img src="transfer.svg" class="swift-logo" width="100">
+            </div>
+            
+            <div class="column-9-med" style="text-align: left;">
+                <p><b>Bind</b> is a lightweight plugin wrote in pure javascript for <b>two-way data binding</b>. Inspired by AngularJS</p>
+            </div>
+        
+        </div>
+
+        <h3 class="demoTitle"><i class="icon ion-ios-game-controller-b-outline icon-padding"></i><br />DEMOS</h3>
+        
+        <div class="row" style="margin: 50px 0 60px 0;">
+            <div class="column-6-med">
+                <label for="firstNameInput">* Enter your name here:</label>
+                <input type="text" em-model="firstName" id="firstNameInput" style="padding: 10px 30px;" />
+                
+                <p><i class="icon ion-ios-person icon-padding"></i>Hello <span em-bind="firstName">Unknown User</span>!</p>                
+            </div>
+            
+            <div class="column-6-med">
+                <span class="highlight">You can bind the same model on many elements!</span>
+                
+                <p class="smaller-font" style="margin-bottom: 15px;">(<span em-bind="quantity">3</span>) 15-inch Macbooks Pros at $2440 </p>
+                
+                <label for="firstNameInput">* Change Quantity:</label>
+                
+                <input type="number" em-model="quantity" style="padding: 10px 15px; width: 30px;" />
+                
+                <button class="btn" id="placeOrder"><i class="icon ion-ios-cart icon-padding"></i>Place Order for <span em-bind="quantity">3</span> Macbooks!</button>
+            </div>
+        </div>
+        
+        <a href="https://github.com/theiliad/bind-js-two-way-data-binding" class="btn">
+            <i class="icon ion-social-github"></i>Get it Now! <small>(alpha 1.0)</small>
+        </a>
+        
+        <div class="credits">Icon made by <a href="http://www.flaticon.com/authors/epiccoders" title="EpicCoders">EpicCoders</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </div>
+    
+<script src="js/bind.js"></script>
+
+<!-- DEMO -->
+<script>
+    document.getElementById("placeOrder").onclick = function() { alert("Demo Action!") };
+</script>
+<!-- DEMO -->
+</body>
+</html>
