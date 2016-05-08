@@ -1,9 +1,8 @@
 # Bind JS
 
-Vibe is a lightweight and ultra-fast javascript modal, equipped with GPU accelerated animations
-<br /><b>(Pure Javascript + CSS3 + GSAP)</b>
+Bind is a lightweight plugin wrote in pure javascript for two-way data binding. Inspired by AngularJS
 
-<img src="https://raw.githubusercontent.com/theiliad/vibe-javascript-modal/master/demo/demo.gif" />
+<img src="https://github.com/theiliad/bind-js-two-way-data-binding/blob/master/demo/demo.gif" />
 
 # License
 
