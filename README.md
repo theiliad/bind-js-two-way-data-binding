@@ -1,4 +1,4 @@
-# Bind JS
+# Bind JS <a href="http://theiliad.github.io/bind-js-two-way-data-binding/"><img src="https://cdn.rawgit.com/theiliad/pulse-javascript-speeddial/master/img/demo.svg" /></a> <img src="https://cdn.rawgit.com/theiliad/pulse-javascript-speeddial/master/img/version.svg" />
 
 Bind is a lightweight plugin wrote in pure javascript for two-way data binding. Inspired by AngularJS
 
